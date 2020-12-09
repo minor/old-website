@@ -204,6 +204,13 @@
   .top-text p {
     font-size: 40px;
   }
+  .heading2Xl {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+  }
 }
 
 #terminal #terminal-container .overlay {
