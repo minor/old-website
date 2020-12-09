@@ -21,6 +21,9 @@ a:hover {
   text-decoration: underline;
 }
 
+::selection {
+  background: #ffb7b7
+}
 img {
   max-width: 100%;
   display: block;
