@@ -1,10 +1,10 @@
 import utilStyles from '../styles/utils.module.css'
+import ToggleTheme from "../components/ToggleTheme";
 import Link from 'next/link'
 
 export default function Footer() {
   return (
     <div>
-      <hr style={{width: '61.5%'}} />
       <br />
       <section className={utilStyles.headingNavigation}>
         <div className={utilStyles.navigation}>
@@ -33,6 +33,7 @@ export default function Footer() {
       <section className={utilStyles.headingFooter}>
         <p><center>&copy; Copyright 2020 - Saurish Srivastava</center></p>
       </section>
+      <ToggleTheme />
     </div>
   )
 }
