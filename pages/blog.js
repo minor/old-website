@@ -31,6 +31,7 @@ export default function Blog({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <hr style={{width: '61.5%'}} />
       <Footer />
     </Layout>
   )

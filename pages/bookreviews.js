@@ -171,6 +171,7 @@ export default function BookReviews() {
         </p> 
       </section>
       <br />
+      <hr style={{width: '61.5%'}} />
       <Footer/>
     </Layout>
   )

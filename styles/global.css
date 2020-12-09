@@ -6,6 +6,27 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 200ms, color 200ms;
+}
+
+body {
+  --background: #faf4f8;
+  --text-color: rgba(0, 0, 0, 0.87);
+  --text: rgba(0, 0, 0, 0.87);
+  --link: #3182ce;
+  --opacity: 0.4;
+  --filter: alpha(opacity=40);
+}
+
+body.dark {
+  --background: #1a202c;
+  --text-color: #f7fafc;
+  --text: #b3b3b3;
+  --link: #7ecdcb;
+  --opacity: 0.5;
+  --filter: brightness(100) invert(1);
 }
 
 * {
@@ -13,7 +34,7 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: var(--link);
   text-decoration: none;
 }
 

@@ -4,6 +4,8 @@ import Emoji from 'a11y-react-emoji'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import ToggleTheme from "../components/ToggleTheme"
+
 
 export default function Home() {
   return (
@@ -44,6 +46,7 @@ export default function Home() {
           </section> 
         </div>
       </section>
+      <br />
       <Footer />
     </Layout>
   )

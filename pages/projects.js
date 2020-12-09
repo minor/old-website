@@ -27,6 +27,7 @@ export default function Projects() {
         </p>
       </section>
       <br />
+      <hr style={{width: '61.5%'}} />
       <Footer />
     </Layout>
   )

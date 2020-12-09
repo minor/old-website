@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../components/footer'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import ToggleTheme from "../components/ToggleTheme"
 
 export default function About() {
   return (
@@ -39,6 +40,7 @@ export default function About() {
           <img className={utilStyles.img} src="/images/me.jpg" alt="Saurish Srivastava"></img>
       </section>
       <br />
+      <hr style={{width: '61.5%'}} />
       <Footer />
     </Layout>
   )
