@@ -43,9 +43,35 @@ a:hover {
 }
 
 ::selection {
-  background: #ffb7b7
+  background: #ffb7b7;
 }
 img {
   max-width: 100%;
   display: block;
 }
+
+.flex{display:flex}
+.items-start{align-items:flex-start}
+.border{border-style: solid;border-width:1px}
+.border-gray-300{border-color:rgba(209,213,219,1)}
+.border-gray-800{border-color:rgba(31,41,55,1)} /** DARK **/
+.rounded-lg{border-radius:.5rem}
+.w-72{width:18rem}
+.mb-8{margin-bottom:2rem}
+.w-4{width:1rem}
+.w-60{width:15rem}
+.h-4{height:1rem}
+.h-60{height:15rem}
+.ml-auto{margin-left:auto}
+.mt-1{margin-top:.25rem}
+.flex-col{flex-direction:column}
+.justify-center{justify-content:center}
+.ml-3{margin-left:.75rem}
+.text-gray-800{color:rgba(31,41,55,1)}
+.text-gray-200{color:rgba(229,231,235,1)} /** DARK **/
+.font-medium{font-weight:500}
+.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.max-w-48{max-width:12rem}
+.w-48{width:12rem}
+.text-gray-500{color:rgba(107,114,128,1)}
+.text-gray-300{color:rgba(209,213,219,1)} /** DARK **/
