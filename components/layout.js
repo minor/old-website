@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Saurish's personal space on the web" />
+        <meta name="description" content="Saurish Srivastava is a high school student interested in computer science and biology." />
         <meta name="google-site-verification" content="SIjCpAkrChhv5gxAW9PcjzHvnOvnK0ttzzCpq4u1qx0" />
         <meta property="og:type" content="website" />
         <meta
