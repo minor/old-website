@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 
 export default function BookReviews() {
   return (
-    <Layout bookreviews>
+    <Layout home>
       <Head>
         <title>{siteTitle}: Book Reviews</title>
       </Head>

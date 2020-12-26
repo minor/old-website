@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 
 export default function MasksWork() {
   return (
-    <Layout maskswork>
+    <Layout home>
       <Head>
         <title>{siteTitle}: Masks Work</title>
       </Head>

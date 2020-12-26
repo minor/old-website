@@ -6,7 +6,7 @@ import ToggleTheme from "../components/ToggleTheme"
 
 export default function About() {
   return (
-    <Layout about>
+    <Layout home>
       <Head>
         <title>{siteTitle}: About Me</title>
       </Head>

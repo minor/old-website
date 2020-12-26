@@ -19,7 +19,7 @@ export default function Post({ postData }) {
           <p>{postData.author}</p>
           <center><Date dateString={postData.date} /></center>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className={utilStyles.blogText} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
       <Footer />
     </Layout>

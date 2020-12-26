@@ -1,5 +1,5 @@
 import utilStyles from '../styles/utils.module.css'
-import ToggleTheme from "../components/ToggleTheme";
+import ToggleTheme from "./ToggleTheme";
 import Link from 'next/link'
 
 export default function Footer() {

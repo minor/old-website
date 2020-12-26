@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Projects() {
   return (
-    <Layout projects>
+    <Layout home>
       <Head>
         <title>{siteTitle}: Projects</title>
       </Head>

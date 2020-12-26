@@ -144,6 +144,10 @@
   padding: 0;
 }
 
+.blogText {
+  color: var(--text);
+}
+
 .mobile-view {
   display: none;
 }
