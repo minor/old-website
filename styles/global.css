@@ -50,6 +50,7 @@ img {
   display: block;
 }
 
+.imgResources{align-content: center}
 .flex{display:flex}
 .items-start{align-items:flex-start}
 .border{border-style: solid;border-width:1px}

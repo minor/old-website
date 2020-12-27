@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/footer.js", "components/ThemeContext.js", "components/date.js", "pages/index.js", "components/ToggleTheme.js", "components/layout.tx"  ],
+, "components/footer.js", "components/ThemeContext.js", "components/date.js", "pages/index.js", "components/ToggleTheme.js", "components/layout.tx", "pages/maskswork.js", "pages/bookreviews.js"  ],
   "exclude": [
     "node_modules"
   ]

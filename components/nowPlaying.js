@@ -4,24 +4,13 @@ import useSWR from 'swr';
 import fetcher from '../lib/fetcher';
 
 export default function NowPlaying() {
-  const { data } = useSWR('/api/now-playing', fetcher);
+  const { data } = useSWR('/api/spotify', fetcher);
 
   return (
-    <center><div className="flex items-start border border-gray-300 rounded-lg w-72 p-2 mb-8">
-      <Image
-        alt="Spotify"
-        className="rounded-lg w-60 h-60"
-        height={60}
-        width={60}
-        src={data?.albumImageUrl || '/images/placeholder.jpg'}
-      />
+    <center><div className="flex items-start border border-gray-300 rounded-lg w-72 p-2 mb-7">
+      <Image alt="Spotify" className="imgResources rounded-lg" height={60} width={60} src={data?.albumImageUrl || '/images/placeholder.jpg'} />
       <div className="flex flex-col justify-center items-start ml-3">
-        <a
-          className="text-gray-800 font-medium max-w-48 truncate w-48"
-          href={data?.songUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="text-gray-800 font-medium max-w-48 truncate w-48" href={data?.songUrl} target="_blank" rel="noopener noreferrer" >
           {data?.title ?? 'Not Playing'}
         </a>
         <p className="text-gray-500 max-w-48 truncate w-48">
