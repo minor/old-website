@@ -1,7 +1,7 @@
 import utilStyles from '../styles/utils.module.css'
 import ToggleTheme from "./ToggleTheme";
 import Link from 'next/link'
-import NowPlaying from './NowPlaying'
+import NowPlaying from './nowPlaying'
 
 export default function Footer() {
   return (
