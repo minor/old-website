@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Footer from '../components/footer'
+import Emoji from 'a11y-react-emoji'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import ToggleTheme from "../components/ToggleTheme"
 
 export default function About() {
   return (
@@ -18,14 +18,14 @@ export default function About() {
         <p>
           Hello there! I’m <strong>Saurish</strong>, a sophomore at {' '}<a href="https://evhs.schoolloop.com/">Evergreen Valley High School</a>.
           I love coding and enjoy messing around in different areas of computer science! I'm currently exploring
-          {' '}<a href="https://python.org/">Python</a>, {' '}<a href="https://www.tensorflow.org/.org/">TensorFlow</a>, {' '}<a href="https://nextjs.org/">Next.js</a>,
-          {' '}<a href="https://java.com/">Java</a>, and {' '}<a href="https://rust-lang.org/">Rust</a>.
-          <br /><br />But, my true passion is: biology. I'm just fascinated by specific topics, such as oncology and neurology — neurons are super cool! I also really
-          like taking  (model and nature), which you can find {' '}<a href="https://unsplash.com/@saurishs/">here</a>.
-          <br /><br />I’m the co-founder of {' '} <a href="https://ataraxia.envisionnew.org/">Ataraxia</a>, a nonprofit with a goal to 
-          improve the mental health of the homeless populations in San Jose. Ataraxia creates care kits with mental health education and materials.
-          At Ataraxia, we strive to create a society where mental health illnesses are more accepted and homeless populations can receive the help
-          they need without feeling outcasted.
+          {' '}<a href="https://www.tensorflow.org/.org/">TensorFlow</a> and {' '}<a href="https://nextjs.org/">Next.js</a>!
+          <br /><br />
+          But, my true passion is: biology. I'm just fascinated by specific topics, such as oncology and neurology. I also really
+          like taking <Emoji symbol="📸" label="camera" />{' '}(model and nature), which you can find on my {' '}<a href="https://unsplash.com/@saurishs/">Unsplash page</a>.
+          <br /><br />
+          I’m the president and executive director at <a href="https://envisionnew.org/">Project enVision</a>, a non-profit organization dedicated to the <strong>community</strong>.
+          Our mission is to create a connected community where education is free and accessible. With COVID-19 removing most in-person contact, we've been committed to
+          helping students from different communities through <strong>online services</strong>. I'm in charge of leading all active projects, managing the team, and teaching! 
           <br /><br />I'm also an avid debater! I participate in Lincoln Douglas on the National Circuit. As of November, I have allocated 1 bid to the
           Tournament of Champions and have reached 2 bid rounds, while reading a variety of different
           {' '}<a href="https://hsld.debatecoaches.org/Evergreen%20Valley/Srivastava%20Neg">arguments</a>. If you have any questions, feel free 

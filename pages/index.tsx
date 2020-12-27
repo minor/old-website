@@ -13,10 +13,10 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          <Emoji symbol="👋🏽" label="Hello" /> , I’m <strong>Saurish</strong>! I’m the co-founder of {' '}
-          <a href="https://ataraxia.envisionnew.org/">Ataraxia</a>, a non-profit organization.
-          I'm an avid debater and a photography hobbyist. Learn more about me {' '}
-          <Link href="/about"><a>here</a></Link>!
+          <Emoji symbol="👋🏽" label="Hello" /> , I’m <strong>Saurish</strong>! I’m the president and executive director at{' '}
+          <a href="https://envisionnew.org/">Project enVision U.S.</a>, a 501(c)(3) non-profit organization dedicated to increasing
+          the accessibility of education <strong>everywhere</strong>.
+          I'm an avid debater and a photography hobbyist. Visit the <Link href="/about"><a>about me</a></Link> page to learn more about me!
         </p>
       </section>
       <section className={utilStyles.container}>
