@@ -1,6 +1,7 @@
 import utilStyles from '../styles/utils.module.css'
 import ToggleTheme from "./ToggleTheme";
 import Link from 'next/link'
+import NowPlaying from './NowPlaying'
 
 export default function Footer() {
   return (
@@ -30,6 +31,8 @@ export default function Footer() {
         <img className={utilStyles.titlelogo} src="/images/github.svg"></img>
         </a>
       </section>
+      <br />
+      <NowPlaying />
       <section className={utilStyles.headingFooter}>
         <p><center>&copy; Copyright 2020 - Saurish Srivastava</center></p>
       </section>
