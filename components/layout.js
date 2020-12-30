@@ -3,7 +3,7 @@ import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Footer from '../components/Footer';
+import Footer from './footer';
 
 export default function Layout({ children }) {
   const [mounted, setMounted] = useState(false);
