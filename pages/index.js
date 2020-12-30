@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import Terminal from '../components/Terminal';
 import Emoji from 'a11y-react-emoji';
 import Link from 'next/link';

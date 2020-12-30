@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Emoji from 'a11y-react-emoji'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 const Divider = () => {
     return (

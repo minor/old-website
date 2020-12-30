@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import Emoji from 'a11y-react-emoji';
 
 const Divider = () => {

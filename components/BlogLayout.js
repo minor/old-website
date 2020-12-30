@@ -1,5 +1,5 @@
 import { parseISO, format } from 'date-fns';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
