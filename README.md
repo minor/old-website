@@ -12,7 +12,7 @@ Originally, I was dazzled by how *quick* Next.js is. It's lightning fast and wit
 
 It has a blog and also comes with a functional dark mode with no annoying screen flashes :)
 
-I'm glad I made the change from HTML/CSS -> Flask -> React Framework with Next.js - it's really allowed me to understand web design a bit better.
+I'm glad I made the change from HTML/CSS -> Flask -> React Framework with Next.js - it's really allowed me to understand web design a bit better. It ALSO has a spotify API loaded (though I didn't do anything with it) at [https://old-website-ten.vercel.app/api/spotify](https://old-website-ten.vercel.app/api/spotify). I had it set up for now-playing but there's so much you can do with the Spotify API. Make sure to add the environmental variables, both locally (if you're running it locally) and in production through whatever service you use.
 
 Here's a live link to the website: [https://old-website-ten.vercel.app/](https://old-website-ten.vercel.app/)
 
