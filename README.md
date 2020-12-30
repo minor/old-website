@@ -1,15 +1,30 @@
-# Welcome to my personal [website](https://saurish.com)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fleerob%2Fleerob.io)
 
-I'm Saurish Srivastava, a sophomore at [Evergreen Valley High School](https://evhs.schoolloop.com/ "Evergreen Valley High School") in San Jose, California. This website contains a little bit of information on me and was a project I picked up during quarantine.
+# leerob.io
 
-This wesbite is created with [Next.js](https://nextjs.org/). The amazing terminal design is from [@crearo](https://github.com/crearo).
+My portfolio has transformed over the years - from a static HTML site, to Jekyll, to Hugo, and finally to Next.js/React/MDX. My personal slice of the internet provides a platform for my writing and to showcase my latest work.
 
-To be honest, I haven't a clue for what else I should be writing here, albeit, feel free to contact me if you have any questions @ [me@saurish.com](mailto:me@saurish.com)!
+## Overview
 
-# Screenshots
+- `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction) powering [`/dashboard`](https://leerob.io/dashboard), newsletter subscription, and post views.
+- `pages/blog/*` - Static pre-rendered blog pages using [MDX](https://github.com/mdx-js/mdx).
+- `pages/dashboard` - [Personal dashboard](https://leerob.io/dashboard) containing metrics like sales, views, and subscribers.
+- `pages/*` - All other static pages.
 
-![Home Page](/screenshots/home.jpg?raw=true "Home Page")
+## Running Locally
 
-# Reproduction
+```bash
+$ git clone https://github.com/leerob/leerob.io.git
+$ cd leerob.io
+$ yarn
+$ yarn dev
+```
 
-Haven't really thought of this yet, just contact me. 
+Create a `.env.local` file similar to [`.env.example`](https://github.com/leerob/leerob.io/blob/master/.env.example).
+
+## Built Using
+
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [MDX](https://github.com/mdx-js/mdx)
+- [Tailwind CSS](https://tailwindcss.com/)

@@ -1,43 +1,58 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import GoogleFonts from 'next-google-fonts';
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
   render() {
     return (
-      <Html>
-        <Head />
-        <body>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function () {
-                function setTheme(newTheme) {
-                  document.body.className = newTheme;
-                  window.__theme = newTheme;
-                  window.__onThemeChange(newTheme);
-                }
-                window.__onThemeChange = function () {};
-                window.__setPreferredTheme = function (newTheme) {
-                  setTheme(newTheme);
-                  try {
-                    localStorage.setItem("theme", JSON.stringify(window.__theme));
-                  } catch (err) {}
-                };
-                const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-                darkQuery.addListener(function (event) {
-                  window.__setPreferredTheme(event.matches ? "dark" : "light");
-                });
-                let preferredTheme;
-                try {
-                  preferredTheme = JSON.parse(localStorage.getItem("theme"));
-                } catch (err) {}
-                setTheme(preferredTheme || (darkQuery.matches ? "dark" : "light"));
-              })();
-            `
-            }}
+      <Html lang="en">
+        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+        <Head>
+          <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
+          <link href="/static/favicons/site.webmanifest" rel="manifest" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com/"
+            crossOrigin=""
           />
+          <link
+            rel="preconnect"
+            href="https://cdn.usefathom.com"
+            crossOrigin=""
+          />
+          <link
+            href="/static/favicons/apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+          />
+          <link
+            href="/static/favicons/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+            type="image/png"
+          />
+          <link
+            href="/static/favicons/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+            type="image/png"
+          />
+          <link
+            color="#4a9885"
+            href="/static/favicons/safari-pinned-tab.svg"
+            rel="mask-icon"
+          />
+          <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+          <meta content="#ffffff" name="theme-color" />
+          <meta content="#ffffff" name="msapplication-TileColor" />
+          <meta
+            content="/static/favicons/browserconfig.xml"
+            name="msapplication-config"
+          />          <meta
+            content="SIjCpAkrChhv5gxAW9PcjzHvnOvnK0ttzzCpq4u1qx0"
+            name="google-site-verification"
+          />
+        </Head>
+        <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
           <NextScript />
         </body>

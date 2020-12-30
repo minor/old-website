@@ -1,45 +1,28 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import { NextSeo } from 'next-seo';
-import Link from 'next/link'
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const name = 'Saurish Srivastava'
-export const siteTitle = 'Saurish Srivastava'
+import Footer from '../components/Footer';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  // After mounting, we have access to the theme
+  useEffect(() => setMounted(true), []);
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="google-site-verification" content="SIjCpAkrChhv5gxAW9PcjzHvnOvnK0ttzzCpq4u1qx0" />
-        <title>{siteTitle}</title>
-      </Head>
-      <NextSeo
-        openGraph={{
-          type: 'website',
-          url: 'https://saurish.com/',
-          title: 'Saurish Srivastava',
-          description: 'Saurish Srivastava is a high school student interested in computer science and biology.',
-          images: [{
-            url: 'https://og-image.now.sh/**Saurish%20Srivastava**%20.jpeg?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg&images=https%3A%2F%2Fi.ibb.co%2Fq7pXDB8%2Flogo.jpg&widths=200&widths=200&heights=250&heights=200',
-            alt: "Saurish Srivastava's website deployed with Vercel"
-          }],
-        }}
-      />
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name} />
-            <h1 className={utilStyles.heading3Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/"><img src="/images/profile.jpg" className={`${styles.headerImage} ${utilStyles.borderCircle}`} alt={name}/></Link>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-    </div>
-  )
+    <body className="h-screen">
+      <div className="bg-white dark:bg-gray-900">
+        <header className="flex justify-center pt-10 pb-6 bg-white dark:bg-gray-900 px-8">
+            <Link href='/'><Image src="/images/profile.jpg" className="w-24 h-24 rounded-full" alt="Picture of the author" width={"150"} height={"150"}/></Link>
+        </header>
+        <main className="flex flex-col justify-center bg-white dark:bg-gray-900 px-8 min-h-full">
+          {children}
+          <Footer />
+        </main>
+      </div>
+    </body>
+  );
 }
