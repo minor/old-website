@@ -2,8 +2,8 @@
 
 ![Home Page](/screenshots/home.jpg?raw=true "Home Page")
 ![About Page](/screenshots/about.jpg?raw=true "About Page")
-![Projects Page](/screenshots/home.jpg?raw=true "Projects Page")
-![Blog Page](/screenshots/home.jpg?raw=true "Blog Page")
+![Projects Page](/screenshots/projects.jpg?raw=true "Projects Page")
+![Blog Page](/screenshots/blog.jpg?raw=true "Blog Page")
 
 
 Hey, there! Recently, I hopped on the hype and started learning Next.js. I really wanted to make a minimalistic website that still allows me to **learn** Next.js, and broadly: the React framework.
